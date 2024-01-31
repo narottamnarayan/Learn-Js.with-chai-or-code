@@ -41,4 +41,25 @@ let str2 = " narayan"
 
 let str3 = str1 + str2
 
-console.log(str3)
+// console.log(str3)
+
+// console.log(1 + "2");
+// console.log("1" + 2);
+// console.log("1" + 2 + 2); //javascript is preffer first 
+// console.log(1 + 2 + "2");
+
+// console.log((1 + 2) * 5 % 1);
+// console.log(typeof ("2" + "3"));
+
+// console.log( +true );
+// console.log( +false );
+// console.log( +"" );
+
+let num1, num2, num3
+
+num1 = num2 = num3 = 2 + 2
+ 
+let gameCounter = 100
+// gameCounter++; //first print and then increment
+++gameCounter;  // first increment and then print
+console.log(gameCounter);
