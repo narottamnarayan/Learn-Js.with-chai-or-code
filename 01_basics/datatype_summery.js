@@ -41,3 +41,37 @@ const heros = ["shaktiman", "doga" , "naagraj"]
  }
   
  console.log(typeof isloggedin);
+
+
+
+//  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++;
+  
+   //   stack(primitive data) and heap(non-primitive data)----//
+
+
+
+
+
+let myname = "narottamnarayan"
+
+let anothername = myname;
+anothername = "gautamnarayan"
+
+
+
+console.log(myname);
+console.log(anothername);
+
+
+
+let userone = {
+   email: "abdc@google.com",
+   upi : "user@ybl",
+}
+ 
+let usertwo = userone;
+
+usertwo.email = "bhcd@gov.in"
+
+console.log(userone.email);
+console.log(usertwo.email);
