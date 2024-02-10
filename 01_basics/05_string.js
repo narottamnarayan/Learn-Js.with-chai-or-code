@@ -11,7 +11,7 @@ console.log(`hi i am ${name} this is my  first ${repocount}`);
 
 // console.log(gameName);
 
-const GameName = new String( "battale ground");
+const GameName = new String( "battale_ground_game");
 
 // console.log(GameName.__proto__);
 
@@ -39,3 +39,5 @@ console.log(anOthergame);
 
  console.log(url.replace('%20', '_'));
  console.log(url.includes('hitesh'));
+
+ console.log(GameName.split("_"));
