@@ -41,4 +41,3 @@ myUser.greetingtwo = function(){
 console.log(myUser.greeting());
 console.log(myUser.greetingtwo());
 
-
