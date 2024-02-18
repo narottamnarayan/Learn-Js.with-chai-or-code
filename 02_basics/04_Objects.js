@@ -45,11 +45,41 @@ const newObj = [
       email:"p@google.com"
    }
 ]
- console.log(newObj[2].email);
+//  console.log(newObj[2].email);
 
- console.log(Object.keys(Tinderuser));
- console.log(Object.values(Tinderuser));
- console.log(Object.entries(Tinderuser));
+//  console.log(Object.keys(Tinderuser));
+//  console.log(Object.values(Tinderuser));
+//  console.log(Object.entries(Tinderuser));
 
- console.log(Tinderuser.hasOwnProperty("isLoggedin"));
+//  console.log(Tinderuser.hasOwnProperty("isLoggedin"));
 
+ const course ={
+   coursename:"js in hindi tutorials",
+   Price:999,
+   courseInstructor:"hitesh"
+ }
+
+// course.courseInstructor
+
+const{courseInstructor: instructor} = course  // destructing process;
+
+console.log(instructor);
+
+// const navbar = ({company}) => {
+
+// }
+//  navbar(company = "hitesh") 
+
+//  console.log(navbar)
+
+// {
+//    "name": "narayan",
+//    "course": "Js in hindi",
+//    "Price": "free"
+// }
+
+[
+   {},
+   {},
+   {}
+]
