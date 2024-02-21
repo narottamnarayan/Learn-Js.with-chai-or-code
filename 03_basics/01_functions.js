@@ -69,9 +69,9 @@ const myobj = {
 const myarr = [200,300,400,600,1000]
 
 function returnsecondvalue(getArr){
-   return getArr[1]
+   return getArr[3]
 }
 
 // console.log(returnsecondvalue(myarr));
-console.log(returnsecondvalue([100.200,500,400]));
+console.log(returnsecondvalue([100,200,500,400]));
 
