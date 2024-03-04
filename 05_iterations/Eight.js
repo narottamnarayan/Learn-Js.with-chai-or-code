@@ -5,7 +5,7 @@ const mynums = [1, 2, 3]
 //   return acc + currval
 // },0 )
 
-const newnum = mynums.reduce( (acc,item) => acc +item, 0 )
+const newnum = mynums.reduce( (acc,item) => acc + item, 0 )
 
 // console.log(newnum);
 
