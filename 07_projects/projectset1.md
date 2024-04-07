@@ -3,6 +3,10 @@
 ## project link
 [click here](https://stackblitz.com/edit/stackblitz-starters-889uhw?file=index.html)
 
+# solution
+
+## project1
+
 ```javascript
 console.log('narayan')
 const buttons = document.querySelectorAll('.button');
