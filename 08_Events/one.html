@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>html Events</title>
+  </head>
+  <body>
+    <h1>Amazing image</h1>
+    <div style="background-color: #414141; color: aliceblue">
+      <ul id="images">
+        <li>
+          <img
+            width="200px"
+            id="photoshop"
+            src="https://images.pexels.com/photos/2244330/pexels-photo-2244330.jpeg?auto=compress&cs=tinysrgb&w=600"
+            alt="photoshop"
+          />
+        </li>
+        <li>
+          <img
+            width="200px"
+            id="japan"
+            src="https://images.pexels.com/photos/402028/pexels-photo-402028.jpeg?auto=compress&cs=tinysrgb&w=600"
+            alt=""
+          />
+        </li>
+        <li>
+          <img
+            width="200px"
+            id="river"
+            src="https://images.pexels.com/photos/1179225/pexels-photo-1179225.jpeg?auto=compress&cs=tinysrgb&w=600"
+            alt=""
+          />
+        </li>
+        <li>
+          <img
+            width="200px"
+            id="owl"
+            src="https://images.pexels.com/photos/53977/eagle-owl-raptor-falconry-owl-53977.jpeg"
+            alt=""
+          />
+        </li>
+        <li>
+          <img
+            width="200px"
+            id="prayer"
+            src="https://images.pexels.com/photos/5416085/pexels-photo-5416085.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt=""
+          />
+        </li>
+        <li>
+          <a
+            href="http://google.com"
+            id="google"
+            style="text-decoration: none; color: aliceblue"
+            >google</a
+          >
+        </li>
+      </ul>
+    </div>
+  </body>
+  <script>
+    // document.getElementById("owl").onclick = function () {
+    //   alert("owl clicked");
+    // };
+
+    //attachEvent()
+    //jQuery - on
+
+    //type, timestamp, defaultPrevented
+    //target,toElement,srcElement ,currenttarget
+    //clientX,clientY,screenX,screenY
+    //altkey,ctrlkey,shiftkey,keycode
+
+    // document.getElementById("images").addEventListener(
+    //   "click",
+    //   function (e) {
+    //     console.log("click inside the ul");
+    //   },
+    //   false
+    // );
+
+    // document.getElementById("owl").addEventListener(
+    //   "click",
+    //   function (e) {
+    //     console.log("click on owl");
+    //     e.stopPropagation();
+    //   },
+    //   false
+    // );
+    // document.getElementById("google").addEventListener(
+    //   "click",
+    //   (e) => {
+    //     e.preventDefault();
+    //     e.stopPropagation();
+    //     console.log("clicked on google");
+    //   },
+    //   false
+    // );
+
+    document.querySelector("#images").addEventListener(
+      "click",
+      function (e) {
+        console.log(e.target.tagName);
+        if (e.target.tagName === "IMG") {
+          console.log(e.target.id);
+          let removeit = e.target.parentNode;
+          removeit.remove();
+        }
+      },
+      false
+    );
+    // removeit.parentNode.removeChild(removeit);
+  </script>
+</html>
