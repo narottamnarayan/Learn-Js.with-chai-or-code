@@ -221,17 +221,20 @@ const randaomColor = function () {
 // console.log(randaomColor());
 let intervalId;
 const startchangingcolor = function () {
-  intervalId = setInterval(changebgcolor, 1000);
-
+  if (!intervalId) {
+    intervalId = setInterval(changebgcolor, 1000);
+  }
   function changebgcolor() {
     document.body.style.backgroundColor = randaomColor();
   }
 };
 const stopchangingcolor = function () {
   clearInterval(intervalId);
+  intervalId = null;
 };
 
 document.querySelector('#start').addEventListener('click', startchangingcolor);
 
 document.querySelector('#stop').addEventListener('click', stopchangingcolor);
+
 ```
