@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body style="background-color: #414141; color: #fff">
+    You can only return Response objects of type "opaque" if the
+    fetchEvent.request object's mode is "no-cors". This prevents the leaking of
+    private data. You can only return Response objects of type "opaqueredirect"
+    if the fetchEvent.request object's mode is "manual". You cannot return
+    Response objects of type "cors" if the fetchEvent.request object's mode is
+    "same-origin".
+  </body>
+  <script>
+    function addnewelement() {
+      let button = document.createElement("button");
+      button.innerHTML = "clcik on me";
+      document.body.appendChild(button);
+      //   console.log(button);
+    }
+    addnewelement();
+    const xhr = new XMLHttpRequest();
+    const url = "https://randomuser.me/api/";
+    xhr.open("get", url);
+    xhr.onreadystatechange = function () {
+      console.log(xhr.readyState);
+      if (xhr.readyState === 4) {
+        const data = JSON.parse(this.responseText);
+        console.log(data.info);
+      }
+    };
+    xhr.send();
+  </script>
+</html>
